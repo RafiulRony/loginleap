@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import useWindowWidth from './Hooks/useWindowWidth'
+
+
 export default function Home() {
+  const onSmallScreen = useWindowWidth()
+
   return (
     <>
     <h2>Home Page</h2>
@@ -9,6 +14,7 @@ export default function Home() {
         >
         Sign up
     </Link>
+    <h2>browsing on {onSmallScreen? 'small' : 'large'} device</h2>
     </>
   )
 }

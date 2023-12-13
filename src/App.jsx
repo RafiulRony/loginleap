@@ -5,7 +5,6 @@ import Signin from "./components/Signin";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App(){
-  console.log("okay");
   return (
     <BrowserRouter>
     <Routes>
